@@ -6,7 +6,7 @@ const Greeting = (props) => {
   const ageInMilis = new Date(ageDate);
   const age = Math.abs(ageInMilis.getUTCFullYear() - 1970);
   return (
-    <div className="greeting">{`My name is ${props.firstName} ${props.lastName}. I am ${age} years old`}</div>
+    <div className="greeting">{`My name is ${props.firstName} ${props.lastName}. I'm ${age} years old`}</div>
   );
 };
 
