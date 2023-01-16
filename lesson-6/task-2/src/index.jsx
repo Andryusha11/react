@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MailBox from './MailBox';
+import Mailbox from './Mailbox';
 import './index.scss';
 
 const rootElem = document.querySelector('#root');
 
-ReactDOM.render(<MailBox unreadedMessages={[]} />, rootElem);
+ReactDOM.render(<Mailbox unreadMessages={[]} />, rootElem);
