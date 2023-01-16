@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Info from './Info';
 
 const info1 = 'Price is 500$. Available in 2 colors';
-const info2 = 'Price is 650$. Not available';
+const info2 = 'Price is 650$. Not available in 1 color';
 
 class Page extends Component {
   constructor(props) {
