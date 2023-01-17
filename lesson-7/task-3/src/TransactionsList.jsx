@@ -5,7 +5,7 @@ class TransactionsList extends Component {
   render() {
     return (
       <ul className="transactions">
-        {this.props.transactions.map((transaction) => (
+        {this.props.transactions.slice().map((transaction) => (
           <Transaction
             key={transaction.id}
             to={transaction.to}
