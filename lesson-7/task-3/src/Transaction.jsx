@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
-const date = (date) => moment().format('DD MMM');
+const date = (date) => moment(date).format('DD MMM');
 const dateTime = (time) => moment(time).format('hh:mm');
 const rightAmount = (amount) => new Intl.NumberFormat('en-GB').format(amount);
 
