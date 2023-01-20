@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Demensions from './Demensions';
+import Dimensions from './Dimensions';
 import './index.scss';
 
 const rootElem = document.querySelector('#root');
 
-ReactDOM.render(<Demensions />, rootElem);
+ReactDOM.render(<Dimensions />, rootElem);
