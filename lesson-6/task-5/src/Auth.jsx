@@ -36,12 +36,11 @@ class Auth extends Component {
     if (this.state.isLogin) {
       button = <Logout onLogout={this.logoutButton} />;
     } else {
-      button =
-        this.state.spinner === true ? (
-          <Spinner size={50} />
-        ) : (
-          <Login onLogin={this.loginButton} />
-        );
+      button = this.state.spinner ? (
+        <Spinner size={50} />
+      ) : (
+        <Login onLogin={this.loginButton} />
+      );
     }
     return <>{button}</>;
   }
