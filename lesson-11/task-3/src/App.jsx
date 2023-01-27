@@ -35,6 +35,7 @@ class App extends Component {
       <div className="app">
         <Expand
           icon={icon}
+          title={'Some title'}
           hideContent={this.hideContent}
           showContent={this.showContent}
         >
