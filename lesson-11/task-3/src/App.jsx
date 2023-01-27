@@ -31,12 +31,7 @@ class App extends Component {
 
     return (
       <div className="app">
-        <Expand
-          icon={icon}
-          title={'Some title'}
-          hideContent={this.hideContent}
-          showContent={this.showContent}
-        >
+        <Expand icon={icon} title={'Some title'}>
           <div className="expand__content">{expandChildElem}</div>
         </Expand>
       </div>
