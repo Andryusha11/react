@@ -13,17 +13,21 @@ class Expand extends Component {
   };
   render() {
     const { children, title } = this.props;
-    const icon = this.state.isContent ? (
-      <i onClick={this.hideContent} className="fas fa-chevron-up"></i>
+    const button = this.state.isContent ? (
+      <button onClick={this.hideContent} className="expand__toggle-btn">
+        <i className="fas fa-chevron-up"></i>
+      </button>
     ) : (
-      <i onClick={this.showContent} className="fas fa-chevron-down"></i>
+      <button onClick={this.showContent} className="expand__toggle-btn">
+        <i className="fas fa-chevron-down"></i>
+      </button>
     );
     const childElem = this.state.isContent ? children : null;
     return (
       <div className="expand border">
         <div className="expand__header">
           <span className="expand__title">{title}</span>
-          <button className="expand__toggle-btn">{icon}</button>
+          {button}
         </div>
         <div className="expand__content">{childElem}</div>
       </div>
