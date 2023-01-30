@@ -1,7 +1,5 @@
 import React from 'react';
 import Expand from './Expand';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const App = () => {
   return (
