@@ -25,7 +25,7 @@ class Expand extends Component {
           <span className="expand__title">{title}</span>
           <button className="expand__toggle-btn">{icon}</button>
         </div>
-        {childElem}
+        <div className="expand__content">{childElem}</div>
       </div>
     );
   }
