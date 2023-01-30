@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 class Expand extends Component {
   state = {
@@ -16,9 +14,9 @@ class Expand extends Component {
   render() {
     const { children, title } = this.props;
     const icon = this.state.isContent ? (
-      <FontAwesomeIcon icon={faChevronUp} onClick={this.hideContent} />
+      <i onClick={this.hideContent} className="fas fa-chevron-up"></i>
     ) : (
-      <FontAwesomeIcon icon={faChevronDown} onClick={this.showContent} />
+      <i onClick={this.showContent} className="fas fa-chevron-down"></i>
     );
     const childElem = this.state.isContent ? children : null;
     return (
