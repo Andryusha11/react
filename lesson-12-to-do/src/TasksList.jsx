@@ -23,7 +23,7 @@ class TasksList extends Component {
 
   onCreate = (text) => {
     const newTask = {
-      text: text,
+      text,
       done: false,
     };
 
