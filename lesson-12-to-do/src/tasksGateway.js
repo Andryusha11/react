@@ -1,5 +1,4 @@
-const baseUrl =
-  'https://crudcrud.com/api/ca435728feee4c2c82d13701d0f2294b/Tasks';
+const baseUrl = 'https://63da858cb28a3148f6896484.mockapi.io/todo/v1/Tasks';
 
 export const createTask = (taskData) => {
   return fetch(baseUrl, {
