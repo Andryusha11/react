@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="page__content">
       <h1>🏠</h1>
-      <Link to="/products">Products</Link>
+      <Link to="/products">To products</Link>
     </div>
   );
 };
