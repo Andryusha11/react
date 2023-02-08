@@ -25,13 +25,16 @@ class User extends Component {
   };
 
   render() {
-    const { avatar_url, name, location } = this.state.user;
     return (
       <div className="user">
-        <img alt="User Avatar" src={avatar_url} className="user__avatar" />
+        <img
+          alt="User Avatar"
+          src="https://avatars1.githubusercontent.com/u/9919?v=4"
+          className="user__avatar"
+        />
         <div className="user__info">
-          <span className="user__name">{name}</span>
-          <span className="user__location">{location}</span>
+          <span className="user__name">Git</span>
+          <span className="user__location">hub</span>
         </div>
       </div>
     );
@@ -39,3 +42,5 @@ class User extends Component {
 }
 
 export default User;
+
+// {this.state.user}

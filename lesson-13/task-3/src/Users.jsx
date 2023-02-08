@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import User from './User';
 
-const Products = () => {
+const Users = () => {
   return (
     <div className="page__content">
       <h1>Users</h1>
@@ -24,4 +24,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Users;
