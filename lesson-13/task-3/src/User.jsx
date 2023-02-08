@@ -8,11 +8,17 @@ class User extends Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     this.fetchUser(this.props.match.params.userId);
     console.log(this.props.match.params.userId);
     console.log(this.state.user);
-  }
+  };
+
+  componentDidUpdate = (prevProps) => {
+    if (prevProps.match.params.userId !== this.props.match.params.userId) {
+      this.fetchUser(this.props.match.params.userId);
+    }
+  };
 
   fetchUser = (userId) => {
     fetch(`https://api.github.com/users/${userId}`)
