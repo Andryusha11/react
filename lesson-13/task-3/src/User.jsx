@@ -35,12 +35,12 @@ class User extends Component {
       <div className="user">
         <img
           alt="User Avatar"
-          src="https://avatars1.githubusercontent.com/u/9919?v=4"
+          src={this.state.user?.avatar_url}
           className="user__avatar"
         />
         <div className="user__info">
-          <span className="user__name">Git</span>
-          <span className="user__location">hub</span>
+          <span className="user__name">{this.state.user?.name}</span>
+          <span className="user__location">{this.state.user?.location}</span>
         </div>
       </div>
     );
