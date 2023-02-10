@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Dimensions = () => {
+const Dimension = () => {
   const [demenions, setDimensions] = useState({ width: null, height: null });
   useEffect(() => {
     const { innerHeight, innerWidth } = window;
@@ -16,9 +16,10 @@ const Dimensions = () => {
       });
     };
     addEventListener('resize', handleResize);
+    return () => removeEventListener('resize', handleResize);
   }, []);
   const { width, height } = demenions;
   return <div className="dimensions">{`${width} - ${height}`}</div>;
 };
 
-export default Dimensions;
+export default Dimension;
