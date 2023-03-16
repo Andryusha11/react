@@ -6,7 +6,7 @@ import {
   deleteTask,
   fetchTasksList,
   updateTask,
-} from './tasksGateway';
+} from '../gateway/tasksGateway';
 
 class TasksList extends Component {
   state = {
